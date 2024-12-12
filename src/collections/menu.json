@@ -1,14 +1,14 @@
 [
 	{
-		"name": "Inicio",
+		"name": "🏠 inicio",
 		"url": "/"
 	},
 	{
-		"name": "Posts",
+		"name": "📰 posts",
 		"url": "/posts"
 	},
 	{
-		"name": "whoami",
+		"name": "👽 whoami",
 		"url": "/about"
 	}
 ]
