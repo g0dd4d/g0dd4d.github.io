@@ -1,22 +1,50 @@
 [
 	{
 		"dates": "Diembre 2024 · Actual",
-		"role": "TEST",
-		"company": "Instituto Nacional de Ciberseguridad de España [INCIBE] (Spanish National Cybersecurity Institute)",
+		"role": "Cibervigilancia",
+		"company": "CCN-CERT (Centro Criptológico Nacional)",
+		"description": "Responsible for customer service and CRM system front-end development.",
+		"logo": "/assets/images/experiences/fta.ico"
+	},
+	{
+		"dates": "Diembre 2024 · Actual",
+		"role": "Cybersecurity Awareness Professional Certification - CAPC",
+		"company": "CertiProf, (ID:3babdO6f)",
+		"description": "Responsible for customer service and CRM system front-end development.",
+		"logo": "/assets/images/experiences/fta.ico"
+	},
+	{
+		"dates": "Diembre 2024 · Actual",
+		"role": "eLearnSecurity Junior Penetration Tester (eJPT)",
+		"company": "eLearnSecurity (ID: 4630522)",
+		"description": "Responsible for customer service and CRM system front-end development.",
+		"logo": "/assets/images/experiences/fta.ico"
+	},
+	{
+		"dates": "Diembre 2024 · Actual",
+		"role": "Cyber Security Foundation Professional Certificate - CSFPC",
+		"company": "CertiProf, (ID:61943310)",
 		"description": "Responsible for customer service and CRM system front-end development.",
 		"logo": "/assets/images/experiences/fta.ico"
 	},
 	{
 		"dates": "Diciembre 2022 · Diciembre 2024",
-		"role": "TEST",
+		"role": "Master en Dirección en ciberseguridad, Hacking ético y Ciberseguridad Ofensiva",
 		"company": "Instituto Nacional de Ciberseguridad de España [INCIBE] (Spanish National Cybersecurity Institute)",
-		"description": "Responsible for customer service and CRM system front-end development.",
+		"description": "EIP International Business School.",
+		"logo": "/assets/images/experiences/yoho.ico"
+	},
+	{
+		"dates": "Diciembre 2022 · Diciembre 2024",
+		"role": "Técnico Superior en Administración de Sistemas operativos en Red",
+		"company": "María Auxiliadora, Salesianas",
+		"description": "EIP International Business School.",
 		"logo": "/assets/images/experiences/yoho.ico"
 	},
 	{
 		"dates": "Octubre 2021 · Octubre 2022 ",
-		"role": "TEST",
-		"company": "Instituto Nacional de Ciberseguridad de España [INCIBE] (Spanish National Cybersecurity Institute)",
+		"role": "Técnico en Sistemas Microinformáticos y Redes",
+		"company": "Virgen del Buen Suceso",
 		"description": "Intern, involved in the development of Internet of Things cloud systems.",
 		"logo": "/assets/images/experiences/wulian.ico"
 	}
