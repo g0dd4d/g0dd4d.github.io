@@ -1,113 +1,88 @@
 ---
-import experiences from "../collections/experiences.json";
-import learn from "../collections/learn.json";
-import AboutExperience from "../components/about-experience.astro";
-import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
+import PageHeading from "../components/page-heading.astro";
 ---
 
 <Layout title="About Me">
   <section class="relative z-20 max-w-5xl mx-auto my-12 px-7 lg:px-0">
-    <PageHeading
-      title="Whoami"/>
-
-      <br>
-      <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
-      Hola soy <strong> Pablo Gracia (Aka. g0dd4d)</strong>, soy un apasionado de la ciberseguridad ofensiva, tengo 28 años y actualmente trabajo en el Instituto Nacional de Ciberseguridad de España (INCIBE).<br><br>
-
-      Me inicié en el mundo de la informática desde muy muy pequeño, ya que mi abuelo trabajó toda su vida en IBM y me enseñaba siempre a cacharrear con todo, luego tomé mi rumbo y me especialicé en ciberseguridad.
+    <PageHeading title="Whoami" />
     
-      <br> Actualmente, estoy enfocando mi carrera profesional a la ciberseguridad ofensiva y a la ciberinteligencia , la idea de crear esto es ir dejando aquí pequeños artículos y apuntes míos mientras sigo estudiando y preparándome.<br>
-    
-      </p>
+    <br />
 
-      <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"> Experiencia </h2>
-        
-      <div class="px-5 py-10">
-        {
-          experiences.map((experience) => {
-            return (
-              <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
-                <AboutExperience
-                  dates={experience.dates}
-                  role={experience.role}
-                  company={experience.company}
-                  logo={experience.logo}
-                />
-              </div>
-            )
-          })
-        }
-      </div>
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+      Hola, soy <strong>Pablo Gracia (aka g0dd4d)</strong>, apasionado de la ciberinteligencia, el hacking ético y la búsqueda constante de conocimiento.<br /><br />
+      Mi pasión por la tecnología nació muy temprano, influenciado por mi abuelo, quien trabajó en IBM y me enseñó a cacharrear con ordenadores.  
+      Ese primer contacto evolucionó hasta una especialización en ciberseguridad ofensiva y análisis de amenazas.<br /><br />
+      Actualmente, enfoco mi carrera en entender, anticipar y actuar frente a las amenazas digitales, combinando técnicas de hacking ético y estrategias de ciberinteligencia.  
+      Este espacio es mi forma de compartir artículos, experiencias y conocimientos a lo largo de mi camino profesional.
+    </p>
 
+    <h2 class="mt-8 mb-4 text-2xl font-bold dark:text-neutral-200">Experiencia Profesional</h2>
 
-      <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Reconocimientos importantes </h2>
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+      He trabajado en proyectos de transformación digital, vigilancia de ciberamenazas y seguridad estratégica en los ámbitos público y privado, tanto a nivel nacional como internacional.  
+      Mi perfil combina habilidades técnicas con visión estratégica, especialmente en el análisis de amenazas, la gestión de incidentes y la inteligencia aplicada a la ciberseguridad.
+    </p>
 
-        <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
-          <strong> Diploma Honorífico de la Secretaría de Estado de Digitalización e Inteligencia Artificial de España </strong> por la contribución a la transformación digital de España durante los años 2020-2023 y la implicación en el equipo de la primera Secretaría de Estado de Digitalización e Inteligencia Artificial del Gobierno de España.</p>
+    <h2 class="mt-8 mb-4 text-2xl font-bold dark:text-neutral-200">Reconocimientos</h2>
 
-          <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Apariciones en medios y ponencias </h2>
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+      <strong>Diploma Honorífico de la Secretaría de Estado de Digitalización e Inteligencia Artificial de España</strong>  
+      por la contribución a la transformación digital entre 2020 y 2023.
+    </p>
 
-          <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
-
-              <li>Artículo sobre ciberseguridad empresarial para el Colegio de Graduados Sociales de Sevilla</li>
-              <li>Entrevista sobre la situación de la ciberseguridad empresarial en España para ElPais</li>
-              <li>Entrevista sobre ciberseguridad empresarial española para Cadena SER</li>
-              <li>Entrevista sobre LLMs generativos: Inteligencia Artificial y ChatGPT para TV La8 León</li>
-              <li>Entrevista sobre ciberseguridad industrial para Industrytalks</li>
-              <li>Entrevista sobre ciberataques a entidades españolas en 20minutos</li>
-              <li>Entrevista sobre antivirus y firewalls en autónomosyemprendedor.es</li>
-              <li>Ponencia sobre vectores de ataque a las organizaciones en Foro MESIAS (Inteligencia marca España) – (Universidad Politécnica de Madrid)</li>
-              <li>Ponencia sobre ciberseguridad en empresas para el Colegio Administradores de Fincas de Madrid (Madrid)</li>
-              <li>Ponencia sobre ciberseguridad en empresas para el Foro NASEC (Navarra)</li>
-              <li>Ponencia sobre ciberseguridad en empresas para ASICA – Asociación de Ingenieros Consultores de Andalucía (Andalucía)</li>
-              <li>Aparición en periódico digital Navarracapital</li>
-              <li>Aparición en periódico digital Noticiasdenavarra</li>
-              <li>Aparición en periódico digital Atana</li>
-        </ul>
-
-
-        <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Formación </h2>
-
-        <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
-
-          <li> <strong> Cibervigilancia</strong>, CCN-CERT (Centro Criptológico Nacional), CNI - Centro Nacional de Inteligencia</li> 
-          <li> <strong> Cybersecurity Awareness Professional Certification - CAPC</strong>, CertiProf, (ID:3babdO6f) </li> 
-          <li> <strong> eLearnSecurity Junior Penetration Tester (eJPT)</strong>, eLearnSecurity (ID: 4630522) </li>
-          <li> <strong> Cyber Security Foundation Professional Certificate - CSFPC</strong>, CertiProf, (ID:61943310) </li>
-          <li> <strong> Master en Dirección en ciberseguridad, Hacking ético y Ciberseguridad Ofensiva</strong>, EIP International Business School.</li>
-          <li> <strong> Técnico Superior en Administración de Sistemas operativos en Red</strong>,  </li>
-          <li> <strong> Técnico en Sistemas Microinformáticos y Redes</strong> </li>
-
-        </ul>
-
-        <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Asistencias </h2>
-
-        <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
-
-          <li> ENISE018 - Encuentro Internacional de Seguridad de la Información (León, España)
-          <li> Cyberwall 2024 (Salamanca, España) </li> 
-          <li> Black Hat Europe 2023 (Londres, Reino Unido)</li> 
-          <li> RootedCON 2023 (Madrid, España)</li> 
-          <li> ENISE017 - Encuentro Internacional de Seguridad de la Información (León, España)</li>
-          <li> ENISE016 - Encuentro Internacional de Seguridad de la Información (León, España)</li>
-          <li> ENISE015 - Encuentro Internacional de Seguridad de la Información (León, España)</li>
-          <li> ENISE013 - Encuentro Internacional de Seguridad de la Información (León, España)</li>
-          <li> ENISE011 - Encuentro Internacional de Seguridad de la Información (León, España)</li>
-
-        </ul>
-
-    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Artículos propios </h2>
+    <h2 class="mt-8 mb-4 text-2xl font-bold dark:text-neutral-200">Ponencias y Apariciones en Medios</h2>
 
     <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
-
-        <li>Historia real: SIM swapping, de estar sin cobertura a estar sin dinero en el banco (INCIBE)</li>
-        <li>Cuando revisas la seguridad de tu empresa, ¿te fijas en las vulnerabilidades? (INCIBE)</li>
-        <li>Top 10 vulnerabilidades web de 2021 (INCIBE)</li>
-        <li>Historias Reales: un deepfake de mi jefe circulando por la Red (INCIBE)</li>
-        <li>¿Qué hacer a la hora de contratar un empleado? Mira el caso de éxito de esta farmacia (INCIBE)</li>
-        <li>¿Llevas la oficina a cuestas? Aplica seguridad también en movilidad (INCIBE)</li>
+      <li>Entrevista en El País sobre ciberseguridad empresarial.</li>
+      <li>Entrevista en Cadena SER sobre ciberseguridad en España.</li>
+      <li>Entrevista sobre LLMs y ChatGPT en TV La8 León.</li>
+      <li>Entrevista en Industrytalks sobre ciberseguridad industrial.</li>
+      <li>Entrevista en 20 Minutos sobre ciberataques a entidades españolas.</li>
+      <li>Artículo en Colegio de Graduados Sociales de Sevilla sobre ciberseguridad empresarial.</li>
+      <li>Ponencia sobre vectores de ataque en Foro MESIAS (Universidad Politécnica de Madrid).</li>
+      <li>Ponencias sobre ciberseguridad en empresas para el Colegio de Administradores de Fincas de Madrid, Foro NASEC (Navarra) y ASICA (Andalucía).</li>
+      <li>Apariciones en medios digitales: NavarraCapital, NoticiasDeNavarra y Atana.</li>
     </ul>
+
+    <h2 class="mt-8 mb-4 text-2xl font-bold dark:text-neutral-200">Asistencia a Eventos</h2>
+
+    <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
+      <li>Black Hat Europe (Londres)</li>
+      <li>ENISE (León, múltiples ediciones)</li>
+      <li>Cyberwall Academy (Salamanca)</li>
+      <li>RootedCON (Madrid)</li>
+    </ul>
+
+    <h2 class="mt-8 mb-4 text-2xl font-bold dark:text-neutral-200">Formación Académica</h2>
+
+    <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
+      <li><strong>Máster en Dirección en Ciberseguridad, Hacking Ético y Ciberseguridad Ofensiva</strong> — EIP International Business School</li>
+      <li><strong>Especialización en Cibervigilancia</strong> — CCN-CERT (Centro Criptológico Nacional)</li>
+      <li><strong>eLearnSecurity Junior Penetration Tester (eJPT)</strong> — eLearnSecurity</li>
+      <li><strong>Cybersecurity Awareness Professional Certification (CAPC)</strong> — CertiProf</li>
+      <li><strong>Cyber Security Foundation Professional Certificate (CSFPC)</strong> — CertiProf</li>
+      <li><strong>Técnico Superior en Administración de Sistemas en Red</strong></li>
+      <li><strong>Técnico en Sistemas Microinformáticos y Redes</strong></li>
+    </ul>
+
+    <h2 class="mt-8 mb-4 text-2xl font-bold dark:text-neutral-200">Artículos Propios</h2>
+
+    <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
+      <li>SIM Swapping: cómo un ataque puede vaciar tu cuenta bancaria (INCIBE).</li>
+      <li>Análisis de vulnerabilidades web (INCIBE).</li>
+      <li>Ciberseguridad en movilidad empresarial (INCIBE).</li>
+      <li>Deepfakes en entornos laborales: riesgos reales (INCIBE).</li>
+      <li>Ciberseguridad en procesos de contratación (INCIBE).</li>
+    </ul>
+
+    <h2 class="mt-8 mb-4 text-2xl font-bold dark:text-neutral-200">Filosofía Profesional</h2>
+
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+      Creo firmemente que en ciberinteligencia y ciberseguridad <strong>no existen expertos definitivos</strong>.  
+      La evolución constante del entorno digital obliga a <strong>aprender, adaptarse y anticiparse</strong> cada día.<br /><br />
+      La curiosidad, la formación continua y la capacidad de análisis son mis principales herramientas para afrontar los retos del mundo digital.
+    </p>
 
   </section>
 </Layout>
