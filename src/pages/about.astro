@@ -1,4 +1,6 @@
 ---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
 import Layout from "../layouts/main.astro";
 import PageHeading from "../components/page-heading.astro";
 ---
@@ -21,7 +23,7 @@ import PageHeading from "../components/page-heading.astro";
     <p class="text-base leading-7 text-gray-600 dark:text-neutral-400 mb-12">
       He trabajado en proyectos de transformación digital, vigilancia de ciberamenazas y seguridad estratégica en los ámbitos público y privado, tanto a nivel nacional como internacional. Mi perfil combina habilidades técnicas con visión estratégica, especialmente en el análisis de amenazas, la gestión de incidentes y la inteligencia aplicada a la ciberseguridad.
     </p>
-    
+
     <div class="px-5 py-10">
       {
         experiences.map((experience) => {
