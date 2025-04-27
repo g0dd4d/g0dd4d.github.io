@@ -12,33 +12,34 @@ import Layout from "../layouts/main.astro";
       title="Whoami"/>
 
       <br>
-      <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
-      Hola soy <strong> Pablo Gracia (Aka. g0dd4d)</strong>, soy un apasionado de la ciberseguridad ofensiva, tengo 28 años y actualmente trabajo en el Instituto Nacional de Ciberseguridad de España (INCIBE).<br><br>
-
-      Me inicié en el mundo de la informática desde muy muy pequeño, ya que mi abuelo trabajó toda su vida en IBM y me enseñaba siempre a cacharrear con todo, luego tomé mi rumbo y me especialicé en ciberseguridad.
-    
-      <br> Actualmente, estoy enfocando mi carrera profesional a la ciberseguridad ofensiva y a la ciberinteligencia , la idea de crear esto es ir dejando aquí pequeños artículos y apuntes míos mientras sigo estudiando y preparándome.<br>
-    
+      <p class="mt-6 mb-12 text-base leading-7 text-gray-600 dark:text-neutral-400">
+        Hola, soy <strong>Pablo Gracia (aka g0dd4d)</strong>, apasionado de la ciberinteligencia y el hacking ético.<br /><br />
+        Desde pequeño, impulsado por la curiosidad y el aprendizaje junto a mi abuelo (trabajador de IBM), descubrí el mundo de la tecnología. Ese primer contacto evolucionó hasta una especialización en ciberseguridad ofensiva y análisis de amenazas.<br /><br />
+        Actualmente, enfoco mi carrera en entender, anticipar y actuar frente a las amenazas digitales, combinando técnicas de hacking ético y estrategias de ciberinteligencia. Este espacio nace como una forma de compartir artículos, experiencias y conocimientos a lo largo de mi camino profesional.
       </p>
 
       <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"> Experiencia </h2>
-        
-      <div class="px-5 py-10">
-        {
-          experiences.map((experience) => {
-            return (
-              <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
-                <AboutExperience
-                  dates={experience.dates}
-                  role={experience.role}
-                  company={experience.company}
-                  logo={experience.logo}
-                />
-              </div>
-            )
-          })
-        }
-      </div>
+      
+        <p class="text-base leading-7 text-gray-600 dark:text-neutral-400 mb-12">
+          He trabajado en proyectos de transformación digital, vigilancia de ciberamenazas y seguridad estratégica en los ámbitos público y privado, tanto a nivel nacional como internacional. Mi perfil combina habilidades técnicas con visión estratégica, especialmente en el análisis de amenazas, la gestión de incidentes y la inteligencia aplicada a la ciberseguridad.
+        </p>
+    
+        <div class="px-5 py-10">
+          {
+            experiences.map((experience) => {
+              return (
+                <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+                  <AboutExperience
+                    dates={experience.dates}
+                    role={experience.role}
+                    company={experience.company}
+                    logo={experience.logo}
+                  />
+                </div>
+              )
+            })
+          }
+        </div>
 
 
       <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Reconocimientos importantes </h2>
@@ -46,7 +47,21 @@ import Layout from "../layouts/main.astro";
         <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
           <strong> Diploma Honorífico de la Secretaría de Estado de Digitalización e Inteligencia Artificial de España </strong> por la contribución a la transformación digital de España durante los años 2020-2023 y la implicación en el equipo de la primera Secretaría de Estado de Digitalización e Inteligencia Artificial del Gobierno de España.</p>
 
-          <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Apariciones en medios y ponencias </h2>
+      <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Formación </h2>
+
+            <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
+  
+            <li> <strong> Cibervigilancia</strong>, CCN-CERT (Centro Criptológico Nacional), CNI - Centro Nacional de Inteligencia</li> 
+            <li> <strong> Cybersecurity Awareness Professional Certification - CAPC</strong>, CertiProf, (ID:3babdO6f) </li> 
+            <li> <strong> eLearnSecurity Junior Penetration Tester (eJPT)</strong>, eLearnSecurity (ID: 4630522) </li>
+            <li> <strong> Cyber Security Foundation Professional Certificate - CSFPC</strong>, CertiProf, (ID:61943310) </li>
+            <li> <strong> Master en Dirección en ciberseguridad, Hacking ético y Ciberseguridad Ofensiva</strong>, EIP International Business School.</li>
+            <li> <strong> Técnico Superior en Administración de Sistemas operativos en Red</strong>,  </li>
+            <li> <strong> Técnico en Sistemas Microinformáticos y Redes</strong> </li>
+  
+            </ul>
+          
+      <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Apariciones en medios y ponencias </h2>
 
           <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
 
@@ -66,20 +81,6 @@ import Layout from "../layouts/main.astro";
               <li>Aparición en periódico digital Atana</li>
         </ul>
 
-
-        <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Formación </h2>
-
-        <ul class="py-2 space-y-[3px] text-base list-disc list-inside text-neutral-500 dark:text-neutral-400">
-
-          <li> <strong> Cibervigilancia</strong>, CCN-CERT (Centro Criptológico Nacional), CNI - Centro Nacional de Inteligencia</li> 
-          <li> <strong> Cybersecurity Awareness Professional Certification - CAPC</strong>, CertiProf, (ID:3babdO6f) </li> 
-          <li> <strong> eLearnSecurity Junior Penetration Tester (eJPT)</strong>, eLearnSecurity (ID: 4630522) </li>
-          <li> <strong> Cyber Security Foundation Professional Certificate - CSFPC</strong>, CertiProf, (ID:61943310) </li>
-          <li> <strong> Master en Dirección en ciberseguridad, Hacking ético y Ciberseguridad Ofensiva</strong>, EIP International Business School.</li>
-          <li> <strong> Técnico Superior en Administración de Sistemas operativos en Red</strong>,  </li>
-          <li> <strong> Técnico en Sistemas Microinformáticos y Redes</strong> </li>
-
-        </ul>
 
         <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200" > Asistencias </h2>
 
